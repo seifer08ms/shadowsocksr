@@ -1,15 +1,15 @@
 FROM alpine:3.6
 
-ENV SERVER_ADDR     0.0.0.0
-ENV SERVER_PORT     51348
-ENV PASSWORD        psw
-ENV METHOD          aes-128-ctr
-ENV PROTOCOL        auth_aes128_md5
-ENV PROTOCOLPARAM   32
-ENV OBFS            tls1.2_ticket_auth_compatible
-ENV TIMEOUT         300
-ENV DNS_ADDR        8.8.8.8
-ENV DNS_ADDR_2      8.8.4.4
+ARG SERVER_ADDR     0.0.0.0
+ARG SERVER_PORT     51348
+ARG PASSWORD        psw
+ARG METHOD          aes-128-ctr
+ARG PROTOCOL        auth_aes128_md5
+ARG PROTOCOLPARAM   32
+ARG OBFS            tls1.2_ticket_auth_compatible
+ARG TIMEOUT         300
+ARG DNS_ADDR        8.8.8.8
+ARG DNS_ADDR_2      8.8.4.4
 
 ARG BRANCH=manyuser
 ARG WORK=~
